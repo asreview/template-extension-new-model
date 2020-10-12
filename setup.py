@@ -6,11 +6,11 @@ setup(
     version='0.1',
     description='Example classifier extension',
     url='https://github.com/asreview/asreview',
-    author='ASReview Core Development Team',
+    author='ASReview team',
     author_email='asreview@uu.nl',
     classifiers=[
         'Development Status :: 4 - Beta',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
