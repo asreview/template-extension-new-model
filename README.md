@@ -9,13 +9,23 @@ extraction techniques. This template can be used to write such an extension
 See https://asreview.readthedocs.io/en/latest/extensions_dev.html for more
 information on writing extensions.
 
-## Installation
+## Getting started
 
-Install the new classifier with:
+Click the `Use this template` button and add/modify the algorithms. Install 
+your new classifier with
 
 ```bash
-pip install git@github.com:asreview/template-extension-new-model.git
+pip install .
 ```
+
+or
+
+```bash
+pip install git@github.com:{USER_NAME}/{REPO_NAME}.git
+```
+
+and replace `{USER_NAME}` and `{REPO_NAME}` by your own details. 
+
 
 ## Usage
 
