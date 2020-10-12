@@ -2,7 +2,7 @@
 
 ASReview has support for extensions, which enable you to seemlessly integrate
 your own programs with the ASReview framework. These extensions can extend the
-software with new models, qurey strategies, balance strategies, and feature
+software with new classifiers, qurey strategies, balance strategies, and feature
 extraction techniques. This template can be used to write such an extension
 (add a new SKLearn naive Bayes classifier with default settings in this case).
 
