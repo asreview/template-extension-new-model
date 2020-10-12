@@ -19,7 +19,7 @@ pip install git@github.com:asreview/template-extension-new-model.git
 
 ## Usage
 
-Use the new classifier `nb_example` is defined in
+The new classifier `nb_example` is defined in
 [`asreviewcontrib/models/nb_default_param.py`](asreviewcontrib/models/nb_default_param.py) 
 and can be used in a simulation.
 
