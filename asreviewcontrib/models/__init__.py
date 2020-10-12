@@ -1,0 +1,1 @@
+from asreview.models.nb_default_param import NaiveBayesDefaultParamsModel
