@@ -1,5 +1,5 @@
 from setuptools import setup
-from setuptools import find_packages
+from setuptools import find_namespace_packages
 
 setup(
     name='asreview-template-model-extension',
@@ -16,7 +16,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     keywords='systematic review',
-    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+    packages=find_namespace_packages(include=['asreviewcontrib.*']),
     python_requires='~=3.6',
     install_requires=[
         'sklearn',
