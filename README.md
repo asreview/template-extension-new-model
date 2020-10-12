@@ -1,4 +1,4 @@
-# Template for extending ASReview with new algorithm
+# Template for extending ASReview with new model
 
 ASReview has support for extensions, which enable you to seemlessly integrate
 your own programs with the ASReview framework. These extensions can extend the
@@ -14,7 +14,7 @@ information on writing extensions.
 Install the new classifier with:
 
 ```bash
-pip install git+
+pip install git@github.com:asreview/template-extension-new-model.git
 ```
 
 ## Usage
