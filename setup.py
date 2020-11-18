@@ -23,17 +23,17 @@ setup(
         'asreview>=0.13'
     ],
     entry_points={
-        'asreview.models': [
+        'asreview.models.classifiers': [
             'nb_example = asreviewcontrib.models.nb_default_param:NaiveBayesDefaultParamsModel',
         ],
-        'asreview.feature_extraction': [
+        'asreview.models.feature_extraction': [
             # define feature_extraction algorithms
         ],
-        'asreview.balance_strategy': [
-            # define balance_strategy algorithms
+        'asreview.models.balance': [
+            # define balance strategy algorithms
         ],
-        'asreview.query_strategy': [
-            # define query_strategy algorithms
+        'asreview.models.query': [
+            # define query strategy algorithms
         ]
     },
     project_urls={
