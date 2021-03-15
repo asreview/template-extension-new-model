@@ -1,9 +1,8 @@
 from sklearn.naive_bayes import MultinomialNB
 
-from asreview.models.base import BaseModel
+from asreview.models.classifiers.base import BaseTrainClassifier
 
-
-class NaiveBayesDefaultParamsModel(BaseModel):
+class NaiveBayesDefaultParamsModel(BaseTrainClassifier):
     """Naive Bayes classifier
 
     The Naive Bayes classifier with the default SKLearn parameters.
