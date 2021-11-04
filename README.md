@@ -21,7 +21,7 @@ pip install .
 or
 
 ```bash
-pip install git@github.com:{USER_NAME}/{REPO_NAME}.git
+pip install git+https://github.com/{USER_NAME}/{REPO_NAME}.git
 ```
 
 and replace `{USER_NAME}` and `{REPO_NAME}` by your own details. 
