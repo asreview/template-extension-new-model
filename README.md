@@ -6,7 +6,7 @@ software with new classifiers, qurey strategies, balance strategies, and feature
 extraction techniques. This template can be used to write such an extension
 (add a new SKLearn naive Bayes classifier with default settings in this case).
 
-See the section [Extensions](https://asreview.readthedocs.io/en/latest/API/extensions_dev.html?highlight=extension) 
+See the section [Extensions](https://asreview.readthedocs.io/en/latest/extensions_dev.html) 
 on ReadTheDocs for more information on writing extensions.
 
 ## Getting started
