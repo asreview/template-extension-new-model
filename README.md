@@ -1,6 +1,6 @@
 # Template for extending ASReview with new model
 
-Works with https://img.shields.io/badge/ASReview-v1.0-%23ffcb05
+Works with ![version](https://img.shields.io/badge/ASReview-v1.0-%23ffcb05)
 
 ASReview has support for extensions, which enable you to seamlessly integrate
 your own programs with the ASReview framework. These extensions can extend the
