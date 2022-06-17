@@ -1,8 +1,10 @@
 # Template for extending ASReview with new model
 
-ASReview has support for extensions, which enable you to seemlessly integrate
+Works with https://img.shields.io/badge/ASReview-v1.0-%23ffcb05
+
+ASReview has support for extensions, which enable you to seamlessly integrate
 your own programs with the ASReview framework. These extensions can extend the
-software with new classifiers, qurey strategies, balance strategies, and feature
+software with new classifiers, query strategies, balance strategies, and feature
 extraction techniques. This template can be used to write such an extension
 (add a new SKLearn naive Bayes classifier with default settings in this case).
 
