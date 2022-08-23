@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages
 
 setup(
     name='asreview-template-model-extension',
-    version='0.1',
+    version='1.0',
     description='Example classifier extension',
     url='https://github.com/asreview/asreview',
     author='ASReview team',
@@ -19,12 +19,11 @@ setup(
     packages=find_namespace_packages(include=['asreviewcontrib.*']),
     python_requires='~=3.6',
     install_requires=[
-        'sklearn',
-        'asreview>=0.13'
+        'asreview>=1.0'
     ],
     entry_points={
         'asreview.models.classifiers': [
-            'nb_example = asreviewcontrib.models.nb_default_param:NaiveBayesDefaultParamsModel',
+            'nb_example = asreviewcontrib.models:NaiveBayesDefaultParamsModel',
         ],
         'asreview.models.feature_extraction': [
             # define feature_extraction algorithms
