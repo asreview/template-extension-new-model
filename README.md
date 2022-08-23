@@ -1,8 +1,5 @@
 # Template for extending ASReview with new model
 
-<a href="https://github.com/asreview/asreview"><img src="https://img.shields.io/badge/ASReview-v1.0-%23ffcb05" alt="ASReview v1.0" /></a>
-
-
 ASReview has support for extensions, which enable you to seamlessly integrate
 your own programs with the ASReview framework. These extensions can extend the
 software with new classifiers, query strategies, balance strategies, and feature
