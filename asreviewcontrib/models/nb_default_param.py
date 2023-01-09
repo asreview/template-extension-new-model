@@ -2,6 +2,7 @@ from sklearn.naive_bayes import MultinomialNB
 
 from asreview.models.classifiers.base import BaseTrainClassifier
 
+
 class NaiveBayesDefaultParamsModel(BaseTrainClassifier):
     """Naive Bayes classifier
 
@@ -12,5 +13,13 @@ class NaiveBayesDefaultParamsModel(BaseTrainClassifier):
 
     def __init__(self):
 
-        super(NaiveBayesDefaultParamsModel, self).__init__()
+        super().__init__()
         self._model = MultinomialNB()
+
+        def fit(self, X, y):
+            """Fit the model to the data."""
+            return self._model.fit(X, y)
+
+        def predict_proba(self, X):
+            """Get the inclusion probability for each sample."""
+            return self._model.predict_proba(X)
