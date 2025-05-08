@@ -42,3 +42,7 @@ select = ["E", "F", "UP", "B"]
 
 [tool.ruff.isort]
 force-single-line = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
