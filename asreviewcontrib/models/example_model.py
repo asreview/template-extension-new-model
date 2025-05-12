@@ -2,7 +2,7 @@ __all__ = ["NaiveBayesDefaultParamsModel"]
 
 from sklearn.naive_bayes import MultinomialNB
 
-class NaiveBayesDefaultParamsModel(MultinomialNB):
+class NaiveBayesDefaultParamsModel:
     """Naive Bayes classifier
 
     The Naive Bayes classifier with the default SKLearn parameters.
