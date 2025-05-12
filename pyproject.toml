@@ -35,6 +35,7 @@ write_to = "asreviewcontrib/models/_version.py"
 
 [project.entry-points."asreview.models.classifiers"]
 "nb_example" = "asreviewcontrib.models.example_model:NaiveBayesDefaultParamsModel"
+"nb_example_alternative" = "asreviewcontrib.models.example_model:NaiveBayesDefaultParamsModelAlternative"
 
 
 [tool.ruff]

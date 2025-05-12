@@ -5,14 +5,22 @@ import asreview as asr
 from asreview.models.queriers import Max
 from asreview.models.feature_extractors import Tfidf
 from asreviewcontrib.models.example_model import NaiveBayesDefaultParamsModel
+from asreviewcontrib.models.example_model import NaiveBayesDefaultParamsModelAlternative
 
 def test_single_nb_example():
     # Load dataset
     dataset_path = Path("tests/data/generic_labels.csv")
     data = asr.load_dataset(dataset_path)
 
-    alc = asr.ActiveLearningCycle(
+    first_active_learning_cycle = asr.ActiveLearningCycle(
         classifier=NaiveBayesDefaultParamsModel(),
+        feature_extractor=Tfidf(),
+        balancer=None,
+        querier=Max(),
+    )
+
+    second_active_learning_cycle = asr.ActiveLearningCycle(
+        classifier=NaiveBayesDefaultParamsModelAlternative(),
         feature_extractor=Tfidf(),
         balancer=None,
         querier=Max(),
@@ -22,7 +30,7 @@ def test_single_nb_example():
     simulate = asr.Simulate(
         X=data,
         labels=data["included"],
-        cycles=[alc],
+        cycles=[first_active_learning_cycle, second_active_learning_cycle],
     )
     simulate.label([0, 1])
     simulate.review()
