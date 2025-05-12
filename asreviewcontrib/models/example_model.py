@@ -15,10 +15,10 @@ class NaiveBayesDefaultParamsModel(MultinomialNB):
         super().__init__()
         self._model = MultinomialNB()
 
-        def fit(self, X, y):
-            """Fit the model to the data."""
-            return self.fit(X, y)
+    def fit(self, X, y, sample_weight=None):
+        """Fit the model to the data."""
+        return self._model.fit(X, y, sample_weight=sample_weight)
 
-        def predict_proba(self, X):
-            """Get the inclusion probability for each sample."""
-            return self.predict_proba(X)
+    def predict_proba(self, X):
+        """Get the inclusion probability for each sample."""
+        return self._model.predict_proba(X)
