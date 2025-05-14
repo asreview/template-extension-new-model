@@ -16,7 +16,7 @@ keywords = ["systematic review"]
 requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [
-    "asreview>=2.0rc4",
+    "asreview>=2.0",
 ]
 
 [project.urls]
