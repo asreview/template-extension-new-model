@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+asreviewcontrib/models/_version.py

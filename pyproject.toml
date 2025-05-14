@@ -1,0 +1,47 @@
+[project]
+name = "asreview-template-model-extension"
+description = "Example model extension"
+readme = "README.md"
+authors = [
+    { name = "ASReview LAB developers", email = "asreview@uu.nl" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+keywords = ["systematic review"]
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = ["asreview>=2,<3"]
+
+[project.urls]
+Issues = "https://github.com/asreview/template-extension-new-model/issues"
+Repository = "https://github.com/asreview/template-extension-new-model/"
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[tool.setuptools]
+packages = ["asreviewcontrib", "asreviewcontrib.models",]
+
+[tool.setuptools_scm]
+write_to = "asreviewcontrib/models/_version.py"
+
+[project.entry-points."asreview.models.classifiers"]
+"nb_example" = "asreviewcontrib.models.example_model:NaiveBayesDefaultParamsModel"
+"nb_example_alternative" = "asreviewcontrib.models.example_model:NaiveBayesDefaultParamsModelAlternative"
+
+
+[tool.ruff]
+select = ["E", "F", "UP", "B"]
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
