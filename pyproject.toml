@@ -15,7 +15,7 @@ classifiers = [
 keywords = ["systematic review"]
 requires-python = ">=3.10"
 dynamic = ["version"]
-dependencies = [asreview>=2,<3]
+dependencies = ["asreview>=2,<3"]
 
 [project.urls]
 Issues = "https://github.com/asreview/template-extension-new-model/issues"
